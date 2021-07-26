@@ -1,0 +1,22 @@
+.filter-bar { 
+    display: none;
+    text-decoration: none;
+    align-items: center;
+    background: url(../img/filter.svg) left no-repeat;
+    width: 24px;
+    height: 24px;
+    &__p {
+        margin-left: 30px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $dimgray;
+    }
+}
+@media (max-width: 767px) {
+    .filter-bar {
+        display: inline-flex;
+    }
+}

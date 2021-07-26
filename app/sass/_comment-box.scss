@@ -1,0 +1,40 @@
+.comment {
+    position: relative;
+    padding: 79px 19px;
+    background: $mintcream;
+    border-radius: 16px;
+    margin-bottom: 90px;
+    &__box { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 50px;
+    }
+    &__left {
+        left: 20px;
+    }
+    &__right {
+        transform: none;
+        right: 20px; 
+    }
+}
+@media (max-width: 991px) {
+    .comment {
+        padding: 30px 15px 95px 15px;
+        margin-bottom: 50px;
+        &__box {
+            margin: 0;
+        }
+        &__disabled {
+            display: none;
+        }
+        &__left {
+            top: 80%;
+            left: 15px;
+        }
+        &__right {
+            top: 80%;
+            right: 15px;
+        }
+    }
+}

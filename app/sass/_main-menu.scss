@@ -1,0 +1,35 @@
+.main-menu {
+	&__ul { 
+        display: flex;
+        list-style: none;
+        margin-left: 53px;
+    }
+	&__li { 
+        margin-right: 35px;
+    }
+	&__a { 
+        color: $dimgray;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+            color: $purpur;
+        }
+        &:active {
+            color: $purpur-opacity;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .main-menu__li {
+        margin-right: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .main-menu {
+        display: none;
+    }
+}

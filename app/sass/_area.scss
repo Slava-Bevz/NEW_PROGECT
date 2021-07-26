@@ -1,0 +1,33 @@
+.area {
+    margin: 0 0 30px 30px;
+    display: flex;
+    background: $mintcream;
+    color: $darkgray;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    resize: none;
+    padding: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    &:hover {
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        transition-duration: 0.2s;
+    }
+    &:focus {
+        background: $white;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        outline: 2px solid transparent;
+    } 
+}
+@media (max-width: 991px) {
+    .area {
+        width: 96%;
+    }
+}
+@media (max-width: 767px) {
+    .area {
+        width: 100%;
+        margin-left: 0;
+    }
+}

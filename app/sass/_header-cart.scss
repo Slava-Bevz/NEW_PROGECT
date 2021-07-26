@@ -1,0 +1,78 @@
+.header-cart { 
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 30px 0;
+    margin-left: auto;
+    &__tel { 
+        font-weight: normal;
+        color: $dimgray;
+        text-decoration: none;
+        &:hover {
+            color: $purpur;
+        }
+        &:active {
+            color: $purpur-opacity;
+        }
+    }
+    &__p {
+        margin: 0 8px 0 30px;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+    }
+    &__svg {
+        fill: #525252;
+    }
+    &__span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $red;
+        color: $white;
+        border-radius: 64px;
+        margin-left: 6px;
+        width: 16px;
+    }
+	&__basket { 
+        display: flex;
+        align-items: center;
+        color: $dimgray;
+        text-decoration: none;
+        fill: #525252;
+        &:hover svg {
+            fill: $purpur;
+            transition-duration: 0.2s;
+        }
+        &:hover {
+            color: $purpur;
+        }
+    }
+	&__burger { 
+        display: none;
+        color: $dimgray;
+        text-decoration: none;
+        height: 14px;
+        width: 20px;
+        padding: 19px;
+        margin: 16px;
+        background: url(../img/burger.svg) center no-repeat;
+    }
+}
+@media (max-width: 767px) {
+    .header-cart {
+        &__tel {
+            margin-right: 10px;
+        }
+        &__p {
+            display: none;
+        }
+        &__svg {
+            margin-left: 10px;
+        }
+        &__burger {
+            display: flex;
+        }
+    }
+}

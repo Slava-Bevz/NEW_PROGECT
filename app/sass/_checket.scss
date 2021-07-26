@@ -1,0 +1,46 @@
+.catalogy-checket {
+    margin-bottom: 15px;
+	&__label { 
+        position: relative;
+        display: flex;
+        margin-bottom: 5px;
+    }
+	&__text { 
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: $gray;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 45px;
+        height: 36px;
+        cursor: pointer;
+        &:hover {
+            color: $dimgray;
+            transition-duration: 0.2s;
+        }
+        &::after {
+            content: '';
+            border: 2px solid $dimgray;
+            width: 29px;
+            height: 29px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 8px;
+        }
+        &::before {
+            display: none;
+            content: '';
+            position: absolute;
+            background-image: url(../img/checed.svg);
+            width: 18px;
+            height: 14px;
+            left: 8px;
+            top: 11px;
+        }
+    }
+}
+.catalogy-checket__input:checked + .catalogy-checket__text::before {
+	display: block;
+}

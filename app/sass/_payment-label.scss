@@ -1,0 +1,45 @@
+.payment-label { 
+    position: relative;
+    display: flex;
+    margin-bottom: 3px;
+	&__text { 
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: $gray;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 45px;
+        height: 36px;
+        cursor: pointer;
+        &:hover {
+            color: $purpur;
+            transition-duration: 0.2s;
+        }
+        &::after {
+            content: '';
+            border: 2px solid $dimgray;
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+        &::before {
+            display: none;
+            content: '';
+            position: absolute;
+            background: $purpur;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            left: 9px;
+            top: 9px;
+            border-radius: 50%;
+        }
+    }
+}
+.payment-label__radio:checked + .payment-label__text::before {
+    display: block;
+}

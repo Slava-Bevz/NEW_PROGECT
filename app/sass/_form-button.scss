@@ -1,0 +1,35 @@
+.form-button {
+    display: flex;
+    margin-left: auto;
+    padding: 16px 29px;
+    background: $red;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 12px;
+    color: $white;
+    letter-spacing: 0.1em;
+    margin-bottom: 73px;
+    cursor: pointer;
+    &:hover {
+        transition-duration: 0.2s;
+        background: $red-two;
+    }
+    &:active {
+        transition-duration: 0.2s;
+        background: $red-three;
+    }
+    &:focus {
+        outline: 2px solid $red-two;
+    }
+}
+@media (max-width: 991px) {
+    .form-button {
+        margin-bottom: 73px;
+    }
+}
+@media (max-width: 767px) {
+    .form-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
