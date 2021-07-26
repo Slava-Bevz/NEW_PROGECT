@@ -4,11 +4,24 @@
         align-items: center;
         margin: 25px 0 35px 0;
     }
-    &__b { 
-        font-size: 22px;
+    &__map {
+        display: flex;
+        align-items: center;
+    }
+    &__title { 
         margin: 0 18px 0 6px;
     }
     &__p { 
         color: $dimgray;
+    }
+}
+@media (max-width: 767px) {
+    .maps {
+        &__info {
+            display: block;
+        }
+        &__map {
+            margin-bottom: 20px;
+        }
     }
 }

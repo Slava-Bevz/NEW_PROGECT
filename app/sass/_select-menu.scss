@@ -1,11 +1,3 @@
-.selection-box { 
-    display: flex;
-    align-items: center;
-    height: 52px;
-    background: $whitesmoke;
-    border-radius: 29px;
-    margin-bottom: 32px;
-}
 .select-menu {
     display: flex;
     list-style: none;
@@ -39,10 +31,6 @@
 	}
 }
 @media (max-width: 767px) {
-    .selection-box {
-        justify-content: center;
-        align-items: center;
-    }
     .select-menu {
         align-items: center;
         overflow: auto;
