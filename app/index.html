@@ -97,11 +97,13 @@
     <main>
         <div class="wrapper">
             <section class="vector-box">
-                <button class="vector-box__vector-left vector" type="button" aria-label="листаем влево"></button>
-                <button class="vector-box__vector-right vector" type="button" aria-label="листаем на право"></button>
+                <button class="vector-box__vector-left vector" type="button" aria-label="листаем влево" onclick="plusSlides(-1)"></button>
+                <button class="vector-box__vector-right vector" type="button" aria-label="листаем на право" onclick="plusSlides(1)"></button>
                 <ul class="vector-box__nav">
-                    <li class="vector-box__li"><button class="vector-box__button" type="button"></button></li>
-                    <li class="vector-box__li"><button class="vector-box__button vector-box__slide-active" type="button"></button></li>
+                    <li class="vector-box__li"><button class="vector-box__button" type="button" onclick="currentSlide(1)"></button></li>
+                    <li class="vector-box__li"><button class="vector-box__button" type="button" onclick="currentSlide(2)"></button></li>
+                    <li class="vector-box__li"><button class="vector-box__button" type="button" onclick="currentSlide(3)"></button></li>
+                    <li class="vector-box__li"><button class="vector-box__button" type="button" onclick="currentSlide(4)"></button></li>
                 </ul>
                 <article class="slider">
                     <div class="slider__box">
@@ -112,10 +114,10 @@
                         <a class="slider__button" href="#">Подробнее</a> 
                     </div>
                     <div class="slider__box-img">
-                        <img class="slider__img" src="img/braslet.png" width="219" height="268" alt="Товар"> 
+                        <img class="slider__img" src="img/clock.png" height="270" alt="Товар"> 
                     </div>
                 </article>
-                <article class="slider slider__disabled">
+                <article class="slider">
                     <div class="slider__box">
                         <div class="slider__info">   
                             <h1 class="slider__info-h1">Слайд об акции какого то товара</h1>
@@ -124,7 +126,31 @@
                         <a class="slider__button" href="#">Подробнее</a> 
                     </div>
                     <div class="slider__box-img">
-                        <img class="slider__img" src="img/braslet.png" width="219" height="268" alt="Товар"> 
+                        <img class="slider__img" src="img/clock2.png" height="270" alt="Товар"> 
+                    </div>
+                </article>
+                <article class="slider">
+                    <div class="slider__box">
+                        <div class="slider__info">   
+                            <h1 class="slider__info-h1">Слайд об акции какого то товара</h1>
+                            <p class="slider__info-p">Cлайд об акции какого то товару</p>
+                        </div>
+                        <a class="slider__button" href="#">Подробнее</a> 
+                    </div>
+                    <div class="slider__box-img">
+                        <img class="slider__img" src="img/clock3.png" height="270" alt="Товар"> 
+                    </div>
+                </article>
+                <article class="slider">
+                    <div class="slider__box">
+                        <div class="slider__info">   
+                            <h1 class="slider__info-h1">Слайд об акции какого то товара</h1>
+                            <p class="slider__info-p">Cлайд об акции какого то товару</p>
+                        </div>
+                        <a class="slider__button" href="#">Подробнее</a> 
+                    </div>
+                    <div class="slider__box-img">
+                        <img class="slider__img" src="img/clock4.png" height="270" alt="Товар"> 
                     </div>
                 </article>
             </section>
@@ -576,6 +602,7 @@
                  <p>© Интернет-магазин «Logo™» 2001–2021 ТМ используется на основании лицензии правообладателя</p>
             </div>
         </footer>
+        <script src="js/script.js"></script>
     </div>
     </div>
 </body>

@@ -1,5 +1,5 @@
 .slider {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     &__box {
@@ -36,10 +36,9 @@
         }
     }
     &__box-img { 
+        max-height: 270px;
+        height: 270px;
         margin-right: 15%;
-    }
-    &__disabled { 
-        display: none;
     }
 }
 @media (max-width: 991px) {
